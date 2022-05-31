@@ -221,5 +221,31 @@ a {
   width: 100%;
   display: block;
 }
+.about-picture-container:hover .about-picture{
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+.section-subtitle {
+  font-size: 2rem;
+  font-family: var(--macondoText);
+  letter-spacing: var(--letterSpacing);
+  text-transform: uppercase;
+  color: var(--secondaryColor); 
+}
+.section-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.about-text {
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+@media screen and (min-width:992px) {
+  .about-img,.about-info {
+    float: left;
+    width: 50%;
+    padding: 2rem;
+  }
 
+}
 /* end of about */
