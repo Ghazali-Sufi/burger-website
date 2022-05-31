@@ -80,14 +80,16 @@ a {
   background: var(--secondaryColor);
   padding: 0.8rem 1.2rem;
   text-transform: uppercase;
+  color: var(--mainDark);
   font-weight: bold;
   outline: 0.3rem solid var(--secondaryColor);
   outline-offset: 4px;
+  cursor: pointer;
+  margin-top : 2rem;
   transition: var(--mainTransition);
-  margin-top : 20px;
 }
 
-.main-btn,
+.main-btn:hover,
 .banner-btn:hover {
   color: var(--mainWhite);
   opacity: 0.7;
@@ -216,14 +218,17 @@ a {
   background: var(--secondaryColor);
   border: 0.5rem solid var(--secondaryColor);
   border-radius: 1rem;
+  overflow: hidden;
 }
 .about-picture {
   width: 100%;
   display: block;
+  transition: var(--mainTransition);
 }
 .about-picture-container:hover .about-picture{
   opacity: 0.7;
   transform: scale(1.2);
+  
 }
 .section-subtitle {
   font-size: 2rem;
