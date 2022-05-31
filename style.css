@@ -67,7 +67,7 @@ a {
 }
 .banner-title {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--mainWhite);
   margin-top: 2.5rem;
   line-height: 1.3;
@@ -86,7 +86,7 @@ a {
   outline: 0.2rem solid var(--secondaryColor);
   outline-offset: 4px;
   cursor: pointer;
-  margin-top : 2rem;
+  margin-top: 2rem;
   transition: var(--mainTransition);
 }
 
@@ -212,7 +212,8 @@ a {
   max-width: 1170px;
   margin: 0 auto;
 }
-.about-img,.about-info {
+.about-img,
+.about-info {
   padding: 2rem 0;
 }
 .about-picture-container {
@@ -226,17 +227,16 @@ a {
   display: block;
   transition: var(--mainTransition);
 }
-.about-picture-container:hover .about-picture{
+.about-picture-container:hover .about-picture {
   opacity: 0.7;
   transform: scale(1.2);
-  
 }
 .section-subtitle {
   font-size: 2rem;
   font-family: var(--macondoText);
   letter-spacing: var(--letterSpacing);
   text-transform: uppercase;
-  color: var(--secondaryColor); 
+  color: var(--secondaryColor);
 }
 .section-title {
   font-size: 3rem;
@@ -246,12 +246,12 @@ a {
   margin: 1rem 0;
   max-width: 26rem;
 }
-@media screen and (min-width:992px) {
-  .about-img,.about-info {
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
     float: left;
     width: 50%;
     padding: 2rem;
   }
-
 }
 /* end of about */
