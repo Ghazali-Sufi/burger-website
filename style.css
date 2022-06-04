@@ -43,6 +43,26 @@ a {
   display: table;
 }
 /* end of clearfix */
+
+/* Globals */
+.section-center {
+  padding: 4rem 0;
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.section-subtitle {
+  font-size: 2rem;
+  font-family: var(--macondoText);
+  letter-spacing: var(--letterSpacing);
+  text-transform: uppercase;
+  color: var(--secondaryColor);
+}
+.section-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+/* end of Globals */
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/main-bcg.jpg") center/cover no-repeat fixed;
@@ -206,12 +226,7 @@ a {
 /* end of Specials */
 
 /* about */
-.section-center {
-  padding: 4rem 0;
-  width: 80vw;
-  max-width: 1170px;
-  margin: 0 auto;
-}
+
 .about-img,
 .about-info {
   padding: 2rem 0;
@@ -231,17 +246,6 @@ a {
   opacity: 0.7;
   transform: scale(1.2);
 }
-.section-subtitle {
-  font-size: 2rem;
-  font-family: var(--macondoText);
-  letter-spacing: var(--letterSpacing);
-  text-transform: uppercase;
-  color: var(--secondaryColor);
-}
-.section-title {
-  font-size: 3rem;
-  text-transform: uppercase;
-}
 .about-text {
   margin: 1rem 0;
   max-width: 26rem;
@@ -255,3 +259,65 @@ a {
   }
 }
 /* end of about */
+
+/* products */
+.products {
+  background: var(--mainDark);
+}
+.products-info,.products-inventory {
+  padding: 2rem 0;
+}
+.products-text {
+  color: var(--mainWhite);
+  max-width: 20rem;
+  margin: 1rem 0;
+}
+.product {
+  padding: 2rem 0;
+}
+.product-img {
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+}
+.product-title {
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing);
+  margin-bottom: 1rem;
+}
+.product-price {
+  color: var(--secondaryColor);
+  letter-spacing: var(--letterSpacing);
+  font-family: var(--macondoText);
+}
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding: 2rem 1rem;
+  }
+  .products-info {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (min-width:992px) {
+  .product {
+    width: 33.3%;
+  }
+}
+@media screen and (min-width:1200px) {
+  .products-info {
+    float: left;
+    width: 30%;
+  }
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+  .product {
+    padding: 1.5rem 1rem 0 1rem;
+  }
+}
+/* end of products */
