@@ -63,6 +63,77 @@ a {
   text-transform: uppercase;
 }
 /* end of Globals */
+
+/* nav btn */
+.nav-btn {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: var(--secondaryColor);
+  margin: 1rem 1.3rem;
+  font-size: 2rem;
+  animation: bounce 2s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* end of nav btn */
+
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: var(--mainGrey);
+  transition: var(--mainTransition);
+  padding-top: 1rem;
+  padding-left: 2rem;
+  transition: var(--mainTransition);
+  /* transform */
+  transform: translateX(-100%); 
+}
+.showNav {
+  transform: translateX(0);
+}
+.nav-close {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav-items {
+  list-style-type: none;
+}
+.nav-link {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--secondaryColor);
+  transition: var(--mainTransition);
+}
+.nav-link:hover {
+  color: var(--mainDark);
+  padding-left: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: 30vw;
+    max-width: 20rem;
+  }
+}
+/* end of navbar */
+
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/main-bcg.jpg") center/cover no-repeat fixed;
@@ -264,7 +335,8 @@ a {
 .products {
   background: var(--mainDark);
 }
-.products-info,.products-inventory {
+.products-info,
+.products-inventory {
   padding: 2rem 0;
 }
 .products-text {
@@ -302,12 +374,12 @@ a {
     padding: 2rem 1rem;
   }
 }
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
   .product {
     width: 33.3%;
   }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .products-info {
     float: left;
     width: 30%;
@@ -326,7 +398,7 @@ a {
 .contact {
   padding: 2rem;
 }
-.contact-item{
+.contact-item {
   margin-bottom: 3rem;
 }
 .contact-title {
@@ -334,7 +406,7 @@ a {
   text-transform: uppercase;
   letter-spacing: calc(var(--letterSpacing) * 2);
   font-family: var(--macondoText);
-   font-size: 1.6rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 .contact-text {
@@ -346,7 +418,7 @@ a {
   border-bottom: 2px solid var(--secondaryColor);
   outline: none;
   width: 100%;
-   margin: 2rem 0;
+  margin: 2rem 0;
   padding: 1.3rem 0;
   font-size: 0.85rem;
   font-weight: bold;
@@ -356,15 +428,16 @@ a {
   color: var(--secondaryColor);
   letter-spacing: var(--letterSpacing);
 }
-@media screen and (min-width:992px) {
-.contact-info,.contact-form {
-float: left;
-width: 50%;
-padding: 0 1rem;
-}
-.contact-info {
-padding: 3rem 0;
-}
+@media screen and (min-width: 992px) {
+  .contact-info,
+  .contact-form {
+    float: left;
+    width: 50%;
+    padding: 0 1rem;
+  }
+  .contact-info {
+    padding: 3rem 0;
+  }
 }
 /* end of contact  */
 
@@ -384,7 +457,7 @@ padding: 3rem 0;
 }
 .footer-text {
   text-transform: uppercase;
-  color: var(--mainWhite); 
+  color: var(--mainWhite);
   letter-spacing: var(--letterSpacing);
   margin-top: 1rem;
   font-size: 0.85rem;

@@ -12,6 +12,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Nav button -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <!-- end of Nav button -->
+
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Specials</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Product</a></li>
+      </ul>
+    </nav>
+    <!-- end of navbar -->
+
     <!-- header starts -->
     <header class="header">
       <div class="banner">
@@ -137,7 +159,6 @@
 
         <!-- products inventory -->
         <article class="products-inventory clearfix">
-
           <!-- single product -->
           <section class="product">
             <img src="./images/product-1.jpg" alt="" class="product-img" />
@@ -167,7 +188,7 @@
     </section>
     <!-- end of products -->
 
-  <!-- contact -->
+    <!-- contact -->
     <section class="contact">
       <div class="section-center clearfix">
         <!-- contact info -->
@@ -175,73 +196,107 @@
           <!-- contact item -->
           <div class="contact-item">
             <h3 class="contact-title">
-              <span class="contact-icon"><i class="fas fa-location-arrow"></i></span>address
+              <span class="contact-icon"
+                ><i class="fas fa-location-arrow"></i></span
+              >address
             </h3>
             <h3 class="contact-text">Makka Al Mukarama Road, Shaqaalaha</h3>
           </div>
           <!-- end of contact item -->
 
-            <!-- contact item -->
+          <!-- contact item -->
           <div class="contact-item">
             <h3 class="contact-title">
-              <span class="contact-icon"><i class="fas fa-envelope"></i></span>Email
+              <span class="contact-icon"><i class="fas fa-envelope"></i></span
+              >Email
             </h3>
             <h3 class="contact-text">email@email.com</h3>
           </div>
           <!-- end of contact item -->
 
-            <!-- contact item -->
+          <!-- contact item -->
           <div class="contact-item">
             <h3 class="contact-title">
-              <span class="contact-icon"><i class="fas fa-phone"></i></span>Phone
+              <span class="contact-icon"><i class="fas fa-phone"></i></span
+              >Phone
             </h3>
             <h3 class="contact-text">+252 615 097668</h3>
           </div>
           <!-- end of contact item -->
-
         </article>
         <!-- end of contact info -->
 
         <!-- contact forms -->
         <article class="contact-form">
-          
-        <form class="form-group">
-          <input type="text" name="name" placeholder="name" class="form-control">
-          <input type="email" name="email" placeholder="email" class="form-control">
-          <textarea name="message" rows="5" class="form-control" placeholder="message"></textarea>
-          <button type="submit" class="main-btn">Send</button>
-        </form>
+          <form
+            class="form-group"
+            action="https://formspree.io/f/mknyarry"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="name"
+              class="form-control"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="email"
+              class="form-control"
+            />
+            <textarea
+              name="message"
+              rows="5"
+              class="form-control"
+              placeholder="message"
+            ></textarea>
+            <button type="submit" class="main-btn">Send</button>
+          </form>
         </article>
         <!-- end of contact forms -->
       </div>
     </section>
     <!-- end of contact -->
 
-     <!-- footer -->
+    <!-- footer -->
     <footer class="footer">
       <div class="section-center">
         <div class="social-icons">
-
-        <!-- social icons -->
-        <a href="https://www.facebook.com/Mohamed.Ahmed.Khazaali" target="_blank" class="social-icon">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <!-- end of social icon -->
-        <!-- social icons -->
-        <a href="https://www.instagram.com/ghazali4me/" target="_blank" class="social-icon">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <!-- end of social icon -->
-        <!-- social icons -->
-        <a href="https://twitter.com/Mo_Ghazali" target="_blank" class="social-icon">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <!-- end of social icon -->
+          <!-- social icons -->
+          <a
+            href="https://www.facebook.com/Mohamed.Ahmed.Khazaali"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icons -->
+          <a
+            href="https://www.instagram.com/ghazali4me/"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icons -->
+          <a
+            href="https://twitter.com/Mo_Ghazali"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- end of social icon -->
         </div>
-          <p class="footer-text">
-          &copy; <span class="text-secondary">Burger House</span>. all rights reserved
+        <p class="footer-text">
+          &copy; <span class="text-secondary">Burger House</span>. all rights
+          reserved
         </p>
-        </div>
-      </footer>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
